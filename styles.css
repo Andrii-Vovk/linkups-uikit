@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;602&display=swap');
+:root {
+    --primary-color: 0, 82, 255;
+    --primary-color-rgb: rgb(0, 82, 255);
+
+    --secondary-color: 254, 149, 38;
+    --secondary-color-rgb: rgb(254, 149, 38);
+
+    --info-color: 255, 203, 47;
+    --info-color-rgb: rgb(255, 203, 47);
+
+    --success-color: 83, 216, 106;
+    --success-color-rgb: rgb(83, 216, 106);
+
+    --error-color: 255, 52, 52;
+    --error-color-rgb: rgb(255, 52, 52);
+}
+
+/* typography - headers */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter';
+    color: #00194C;
+}
+
+h1 {
+    font-size: 32px;
+    line-height: 42px;
+}
+
+h2 {
+    font-size: 28px;
+    line-height: 36px;
+}
+
+h3 {
+    font-size: 22px;
+    line-height: 30px;
+}
+
+h4 {
+    font-size: 20px;
+    line-height: 28px;
+}
+
+h5 {
+    font-size: 18px;
+    line-height: 26px;
+}
+
+h6 {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+/* typography - paragraphs */
+p {
+    font-family: 'Inter';
+    color: #00194C;
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.p1 {
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.p2 {
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.p3 {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.p4 {
+    font-size: 14px;
+    line-height: 22px;
+}
+
+/* Color demos */
+
+#color-demonstrations {
+    display: flex;
+    justify-content: space-around;
+}
+
+.color-box {
+    width: 20%;
+    height:100px;
+}
+/* ------------------ */
+.primary {
+    background-color: var(--primary-color-rgb);
+}
+
+.primary-75 {
+    background-color: rgba(var(--primary-color), 0.75);
+}
+
+.primary-50 {
+    background-color: rgba(var(--primary-color), 0.5);
+}
+
+.primary-25 {
+    background-color: rgba(var(--primary-color), 0.25);
+}
+
+.primary-10 {
+    background-color: rgba(var(--primary-color), 0.10);
+}
+/* ------------------ */
+.secondary {
+    background-color: var(--secondary-color-rgb);
+}
+
+.secondary-75 {
+    background-color: rgba(var(--secondary-color), 0.75);
+}
+
+.secondary-50 {
+    background-color: rgba(var(--secondary-color), 0.5);
+}
+
+.secondary-25 {
+    background-color: rgba(var(--secondary-color), 0.25);
+}
+
+.secondary-10 {
+    background-color: rgba(var(--secondary-color), 0.10);
+}
+/* ------------------ */
+.info {
+    background-color: var(--info-color-rgb);
+}
+
+.info-75 {
+    background-color: rgba(var(--info-color), 0.75);
+}
+
+.info-50 {
+    background-color: rgba(var(--info-color), 0.5);
+}
+
+.info-25 {
+    background-color: rgba(var(--info-color), 0.25);
+}
+
+.info-10 {
+    background-color: rgba(var(--info-color), 0.10);
+}
+/* ------------------ */
+.success {
+    background-color: var(--success-color-rgb);
+}
+
+.success-75 {
+    background-color: rgba(var(--success-color), 0.75);
+}
+
+.success-50 {
+    background-color: rgba(var(--success-color), 0.5);
+}
+
+.success-25 {
+    background-color: rgba(var(--success-color), 0.25);
+}
+
+.success-10 {
+    background-color: rgba(var(--success-color), 0.10);
+}
+/* ------------------ */
+.error {
+    background-color: var(--error-color-rgb);
+}
+
+.error-75 {
+    background-color: rgba(var(--error-color), 0.75);
+}
+
+.error-50 {
+    background-color: rgba(var(--error-color), 0.5);
+}
+
+.error-25 {
+    background-color: rgba(var(--error-color), 0.25);
+}
+
+.error-10 {
+    background-color: rgba(var(--error-color), 0.10);
+}
