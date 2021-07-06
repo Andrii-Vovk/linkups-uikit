@@ -1,0 +1,24 @@
+.typography-table {
+  margin-top: 50px;
+  border-collapse: collapse;
+}
+
+.typography-table td {
+  padding: 54px 24px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  font-family: "Inter";
+  color: #00194c;
+  font-size: 18px;
+  line-height: 26px;
+  box-shadow: var(--shadow-bottom-border);
+}
+
+.theader {
+  font-family: SF-Pro;
+  color: var(--primary-900);
+  font-weight: 500;
+  background-color: var(--primary-100);
+  padding: 35px 24px;
+}
