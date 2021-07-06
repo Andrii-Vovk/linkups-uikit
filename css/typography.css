@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border-collapse: collapse;
+}
+
+@font-face {
+  font-family: "SF-Pro";
+  src: url("../fonts/sf-pro-text/SF-Pro-Text-Regular.otf") format("opentype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "SF-Pro";
+  src: url("../fonts/sf-pro-text/SF-Pro-Text-Thin.otf") format("opentype");
+  font-weight: lighter;
+}
+@font-face {
+  font-family: "SF-Pro";
+  src: url("../fonts/sf-pro-text/SF-Pro-Text-Medium.otf") format("opentype");
+  font-weight: 500;
+}
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* typography - headers */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Inter";
+  color: #00194c;
+}
+
+h1 {
+  font-size: 32px;
+  line-height: 42px;
+}
+
+h2 {
+  font-size: 28px;
+  line-height: 36px;
+}
+
+h3 {
+  font-size: 22px;
+  line-height: 30px;
+}
+
+h4 {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+h5 {
+  font-size: 18px;
+  line-height: 26px;
+}
+
+h6 {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/* typography - paragraphs */
+p {
+  font-family: "Inter";
+  color: #00194c;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.p1 {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.p2 {
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.p3 {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.p4 {
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.table-container {
+  display: flex;
+  justify-content: center;
+}
+
+/*# sourceMappingURL=typography.css.map */

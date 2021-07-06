@@ -1,0 +1,54 @@
+@import 'variables', 'resets', 'font-imports';
+
+
+.shadow-bottom-border {
+  box-shadow: $shadow-bottom-border;
+}
+
+.shadow-bottom-1 {
+  box-shadow: $shadow-bottom-1;
+}
+
+.shadow-bottom-2 {
+  box-shadow: $shadow-bottom-2;
+}
+
+.shadow-top-border {
+  box-shadow: $shadow-top-border;
+}
+
+.shadow-top-1 {
+  box-shadow: $shadow-top-1;
+}
+
+.shadow-top-2 {
+  box-shadow: $shadow-top-2;
+}
+
+.shadow-container {
+  display: flex;
+  justify-content: space-around;
+
+  margin: 100px 200px;
+}
+
+.card {
+  width: 80px;
+  height: 80px;
+  background-color: #f2f2f2;
+  border-radius: 4px;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-about {
+  font-family: Inter;
+  font-size: 14px;
+  line-height: 17px;
+  padding-top: 8px;
+  color: $primary-900;
+}
