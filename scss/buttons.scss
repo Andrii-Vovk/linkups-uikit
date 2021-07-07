@@ -1,126 +1,104 @@
 @import "variables", "resets", "font-imports";
 
-.flex-container {
-  display: flex;
-  justify-content: space-around;
-  padding: 0% 0%;
-}
-
 @mixin button-base {
-  border-radius: 4px;
-  font-family: Inter;
-  font-size: 16px;
-  line-height: 24px;
-  color: $primary-color-rgb;
-  padding: 15px 48px;
+  border-radius: 2px;
   text-align: center;
   text-decoration: none;
+  border: none;
   display: inline-block;
+  padding-top: 3px;
 }
 
-.button-primary {
-  @include button-base;
+@mixin ease-button-transition {
+  transition: all 0.3s ease-in-out;
+}
 
-  background: $primary-color-rgb;
-  border: none;
-  color: white;
+.center-button {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.accent-button {
+  @include button-base;
+  @include ease-button-transition;
+  width: 12.8182rem;
+  height: 2.6818rem;
+  background-color: $accent-color-hex;
+  font-family: SukhumvitSet;
+  font-weight: 700;
+  color: black;
+  font-size: 0.8182rem;
+  line-height: 1.4091rem;
 
   &:hover {
-    background-color: $primary-400;
-  }
-
-  &:active {
-    background-color: $primary-300;
-  }
-
-  &:disabled {
-    background-color: transparentize($primary-color-rgb, 0.92);
-    color: $primary-300;
-  }
-
-  &[disabled] {
-    pointer-events: none;
-  }
-
-  & svg {
-    position: relative;
-    top: 7%;
+    background-color: lighten($accent-color-hex, 10%);
+    transform: scale(1.05);
   }
 }
 
-.button-ghost {
+.black-button {
   @include button-base;
-
-  background: white;
-  border: 1px solid $primary-color-rgb;
-  color: $primary-color-rgb;
-
-  &:disabled {
-    color: $primary-200;
-    border: 1px solid $primary-200;
-  }
-  &:hover {
-    background-color: $primary-100;
-  }
-
-  &[disabled] {
-    pointer-events: none;
-  }
-
-  &:active {
-    color: $primary-700;
-    border: 1px solid $primary-700;
-  }
+  @include ease-button-transition;
+  width: 8.2727rem;
+  height: 2.3636rem;
+  background-color: black;
+  font-family: SukhumvitSet;
+  font-weight: 500;
+  font-size: 0.8182rem;
+  line-height: 1.0909rem;
+  color: white;
 
   & svg {
-    position: relative;
-    top: 7%;
+    display: inline-block;
+    vertical-align: text-bottom;
+    margin-right: 10px;
+  }
+
+  &:hover {
+    background-color: lighten(black, 10%);
+    transform: scale(1.05);
   }
 }
 
-/* Demo classes */
+/* 
 
-@mixin demo-static-button-base {
-  border-radius: 4px;
-  font-family: Inter;
-  font-size: 16px;
-  line-height: 24px;
-  border: none;
-  color: white;
-  padding: 15px 48px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-}
-
-.button-primary-hover {
-  @include demo-static-button-base;
-  background-color: $primary-400;
-}
-
-.button-primary-active {
-  @include demo-static-button-base;
-  background-color: $primary-300;
-}
+<button class="black-button">
+          <svg
+            width="18"
+            height="22"
+            viewBox="0 0 18 22"
+            fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M11.8162 4.12447C12.3356 3.57646 12.7189 2.97624 12.9662 2.32356C13.2052 1.67088 13.3248 1.07935 13.3248 0.548284C13.3248 0.513722 13.3227 0.469721 13.3186 0.41774C13.3142 0.365759 13.3124 0.322508 13.3124 0.287196C13.3042 0.261088 13.2939 0.213215 13.2815 0.143341C13.2691 0.0739814 13.2588 0.0261088 13.2506 0C11.7998 0.356793 10.7696 1.00078 10.1596 1.93193C9.54139 2.87157 9.21988 3.98982 9.19515 5.28645C9.74721 5.23399 10.1758 5.16053 10.4811 5.06478C10.9262 4.90769 11.3711 4.59463 11.8162 4.12447Z"
+              fill="white"
+            />
+            <path
+              d="M16.0197 14.2143C15.4509 13.3533 15.1665 12.383 15.1665 11.3034C15.1665 10.3203 15.4342 9.41982 15.9702 8.60156C16.2587 8.15799 16.7286 7.64454 17.3798 7.06122C16.9512 6.50453 16.5225 6.06964 16.0939 5.75586C15.319 5.19091 14.4411 4.90739 13.4604 4.90739C12.8751 4.90739 12.1621 5.05583 11.3213 5.35148C10.5134 5.6476 9.92404 5.79505 9.5533 5.79505C9.27306 5.79505 8.70428 5.6645 7.84696 5.40346C6.98144 5.14237 6.25215 5.01182 5.6586 5.01182C4.24077 5.01182 3.07024 5.6384 2.14722 6.89177C1.21574 8.16233 0.75 9.78941 0.75 11.7733C0.75 13.8791 1.35586 16.0675 2.56765 18.3391C3.79568 20.5927 5.03624 21.7194 6.28923 21.7194C6.70962 21.7194 7.25344 21.5715 7.92115 21.2759C8.58885 20.9887 9.17387 20.8451 9.67673 20.8451C10.2125 20.8451 10.8347 20.9844 11.5438 21.2626C12.2937 21.5411 12.8708 21.6801 13.2747 21.6801C14.3296 21.6801 15.3888 20.8274 16.4522 19.122C17.1446 18.0345 17.6516 16.9464 17.9731 15.8589C17.2395 15.6242 16.5885 15.0759 16.0197 14.2143Z"
+              fill="currentColor"
+            />
+          </svg>
+          App Store
+        </button>
 
 
-.button-ghost-hover {
-  @include demo-static-button-base;
-  border: 1px solid $primary-color-rgb;
-  color: $primary-color-rgb;
-  background-color: $primary-100;
-}
-
-.button-ghost-disabled {
-  @include demo-static-button-base;
-  color: $primary-200;
-  border: 1px solid $primary-200;
-}
-
-
-.button-ghost-active {
-  @include demo-static-button-base;
-  color: $primary-700;
-  border: 1px solid $primary-700;
-  background-color: $primary-100;
-}
+        <button class="black-button">
+          <svg
+            width="21"
+            height="22"
+            viewBox="0 0 21 22"
+            fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M11.7488 11.9691L14.9176 15.138L3.72644 21.3553C3.22321 21.6349 2.6765 21.6717 2.19077 21.5272L11.7488 11.9691ZM11.7488 9.93148L2.26858 0.451276C2.7344 0.33281 3.24991 0.379861 3.72644 0.644604L14.8538 6.82647L11.7488 9.93148ZM12.7676 10.9503L16.1637 7.55421L19.2173 9.25061C20.5897 10.0131 20.5897 11.9868 19.2173 12.7493L16.2275 14.4102L12.7676 10.9503ZM10.73 10.9503L1.03889 20.6414C0.8592 20.345 0.753418 19.9936 0.753418 19.606L0.75342 2.39394C0.75342 1.97945 0.874377 1.60638 1.07731 1.29767L10.73 10.9503Z"
+              fill="currentColor"
+            />
+          </svg>
+          Google Play
+        </button> 
+        
+        */

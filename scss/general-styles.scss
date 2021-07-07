@@ -1,0 +1,152 @@
+@mixin fit-screen-img-horizontal {
+  width: 100%;
+  min-height: auto;
+}
+
+.top-nav {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  z-index: 2;
+  color: white;
+  padding: 0px 50px;
+}
+
+ul {
+  list-style-type: none;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
+
+  padding: 35px 0px;
+
+  & svg {
+    display: inline-block;
+    vertical-align: -2px;
+  }
+
+  & .play-button-svg {
+    display: inline-block;
+    vertical-align: -5px;
+  }
+
+  & .send-to-left {
+    margin-right: auto;
+  }
+
+  & li {
+    padding: 0px 30px;
+  }
+}
+
+.darkened-img {
+  @include fit-screen-img-horizontal;
+  filter: brightness(50%);
+}
+
+@mixin centering-in-div() {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.title-card-container {
+  @include centering-in-div;
+  transform: translate(-50%, -10%);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  color: white;
+
+  & h3 {
+    position: relative;
+    top: -45px;
+  }
+
+  & .card-2 {
+    text-align: center;
+    & h2 {
+      position: relative;
+      top: -45px;
+    }
+
+    & p {
+      opacity: 80%;
+    }
+  }
+}
+
+
+.title-card-container-2 {
+    @include centering-in-div;
+
+    transform: translate(-50%, -50%);
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    color: white;
+  
+    & .card-2 {
+      text-align: center;
+      & h2 {
+        position: relative;
+        top: -45px;
+      }
+  
+      & p {
+        opacity: 80%;
+      }
+    }
+  }
+
+
+.gray-rectangle-container {
+  position: relative;
+  bottom: 7px;
+
+  & .coming-soon-flex {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    color: white;
+    opacity: 0.06;
+
+    font-family: Saudagar;
+    font-size: 9rem; //198px
+    line-height: 16.25rem; //357.5px
+    text-transform: uppercase;
+
+    position: absolute;
+    top: -85px;
+  }
+
+  & img {
+    @include fit-screen-img-horizontal;
+  }
+}
+
+.eyebrush-flex {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    bottom: 25vh;
+
+    & img {
+        width: 80vw;
+    }
+}
+
+.iphone-flex {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 7%;
+
+   & .card-text {
+       width: 80%;
+   }
+}

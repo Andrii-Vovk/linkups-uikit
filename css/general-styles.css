@@ -1,0 +1,126 @@
+.top-nav {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  z-index: 2;
+  color: white;
+  padding: 0px 50px;
+}
+
+ul {
+  list-style-type: none;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
+  padding: 35px 0px;
+}
+ul svg {
+  display: inline-block;
+  vertical-align: -2px;
+}
+ul .play-button-svg {
+  display: inline-block;
+  vertical-align: -5px;
+}
+ul .send-to-left {
+  margin-right: auto;
+}
+ul li {
+  padding: 0px 30px;
+}
+
+.darkened-img {
+  width: 100%;
+  min-height: auto;
+  filter: brightness(50%);
+}
+
+.title-card-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -10%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+.title-card-container h3 {
+  position: relative;
+  top: -45px;
+}
+.title-card-container .card-2 {
+  text-align: center;
+}
+.title-card-container .card-2 h2 {
+  position: relative;
+  top: -45px;
+}
+.title-card-container .card-2 p {
+  opacity: 80%;
+}
+
+.title-card-container-2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+.title-card-container-2 .card-2 {
+  text-align: center;
+}
+.title-card-container-2 .card-2 h2 {
+  position: relative;
+  top: -45px;
+}
+.title-card-container-2 .card-2 p {
+  opacity: 80%;
+}
+
+.gray-rectangle-container {
+  position: relative;
+  bottom: 7px;
+}
+.gray-rectangle-container .coming-soon-flex {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  color: white;
+  opacity: 0.06;
+  font-family: Saudagar;
+  font-size: 9rem;
+  line-height: 16.25rem;
+  text-transform: uppercase;
+  position: absolute;
+  top: -85px;
+}
+.gray-rectangle-container img {
+  width: 100%;
+  min-height: auto;
+}
+
+.eyebrush-flex {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  bottom: 25vh;
+}
+.eyebrush-flex img {
+  width: 80vw;
+}
+
+.iphone-flex {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 7%;
+}
+.iphone-flex .card-text {
+  width: 80%;
+}
+
+/*# sourceMappingURL=general-styles.css.map */

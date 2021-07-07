@@ -4,24 +4,113 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/navigation.css" />
-    <link rel="stylesheet" href="css/shadows.css" />
     <link rel="stylesheet" href="css/typography.css" />
+    <link rel="stylesheet" href="css/general-styles.css" />
+    <link rel="stylesheet" href="css/buttons.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <title>Home</title>
   </head>
   <body>
-    <div class="parent-container">
-      <div class="flex-container">
-        <h1>Navigation</h1>
-        <p><a href="/typography.html">Typography</a></p>
-        <p><a href="/colors.html">Colors</a></p>
-        <p><a href="/shadows.html">Shadows</a></p>
-        <p><a href="/buttons.html">Buttons</a></p>
-        <p><a href="/inputs.html">Inputs</a></p>
-        <p><a href="/dropdown.html">Dropdowns</a></p>
-        <p><a href="/checks.html">Checkboxes and sliders</a></p>
+    <nav class="top-nav">
+      <ul>
+        <li class="lashes send-to-left">Lashes</li>
+        <li class="navbar-links li-right">Coming soon on:</li>
+        <li class="navbar-links li-right">
+          <svg
+            width="18"
+            height="21"
+            viewBox="0 0 18 21"
+            fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M17.6227 16.3654C17.2996 17.0991 16.917 17.7744 16.4738 18.3953C15.8697 19.2418 15.3751 19.8277 14.9938 20.153C14.4029 20.6871 13.7698 20.9606 13.0917 20.9762C12.605 20.9762 12.018 20.8401 11.3348 20.564C10.6492 20.2891 10.0192 20.153 9.44321 20.153C8.83907 20.153 8.19115 20.2891 7.49811 20.564C6.80402 20.8401 6.24486 20.9839 5.81735 20.9982C5.16718 21.0254 4.51913 20.7441 3.87226 20.153C3.45939 19.7992 2.94297 19.1925 2.32433 18.3331C1.66057 17.4153 1.11488 16.3511 0.687366 15.1378C0.229518 13.8273 0 12.5583 0 11.3297C0 9.92233 0.309453 8.70852 0.929283 7.69134C1.41642 6.87431 2.06447 6.22981 2.87557 5.75668C3.68666 5.28355 4.56305 5.04244 5.50684 5.02702C6.02326 5.02702 6.70047 5.18399 7.54203 5.4925C8.38123 5.80205 8.92006 5.95902 9.15631 5.95902C9.33293 5.95902 9.93153 5.77547 10.9463 5.40954C11.9059 5.07018 12.7158 4.92967 13.3793 4.98502C15.1772 5.12761 16.5279 5.82408 17.4262 7.07886C15.8183 8.03628 15.0229 9.37725 15.0387 11.0975C15.0532 12.4375 15.5479 13.5525 16.52 14.4378C16.9606 14.8488 17.4526 15.1663 18 15.3919C17.8813 15.7302 17.756 16.0543 17.6227 16.3654ZM13.4993 0.42012C13.4993 1.47036 13.1089 2.45096 12.3306 3.3586C11.3915 4.43761 10.2555 5.06111 9.02361 4.96272C9.00792 4.83673 8.99881 4.70412 8.99881 4.56477C8.99881 3.55654 9.44545 2.47754 10.2386 1.59531C10.6346 1.14862 11.1382 0.777199 11.7489 0.480913C12.3583 0.189048 12.9348 0.0276404 13.4769 0C13.4927 0.140401 13.4993 0.28081 13.4993 0.420106V0.42012Z"
+              fill="currentColor"
+            />
+          </svg>
+          App Store
+        </li>
+        <li class="navbar-links li-right">
+          <svg
+            class="play-button-svg"
+            width="21"
+            height="22"
+            viewBox="0 0 21 22"
+            fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M11.7488 11.9691L14.9176 15.138L3.72644 21.3553C3.22321 21.6349 2.6765 21.6717 2.19077 21.5272L11.7488 11.9691ZM11.7488 9.93148L2.26858 0.451276C2.7344 0.33281 3.24991 0.379861 3.72644 0.644604L14.8538 6.82647L11.7488 9.93148ZM12.7676 10.9503L16.1637 7.55421L19.2173 9.25061C20.5897 10.0131 20.5897 11.9868 19.2173 12.7493L16.2275 14.4102L12.7676 10.9503ZM10.73 10.9503L1.03889 20.6414C0.8592 20.345 0.753418 19.9936 0.753418 19.606L0.75342 2.39394C0.75342 1.97945 0.874377 1.60638 1.07731 1.29767L10.73 10.9503Z"
+              fill="currentColor"
+            />
+          </svg>
+          Google Play
+        </li>
+      </ul>
+    </nav>
+
+    <div class="img-container">
+      <img
+        class="darkened-img"
+        src="/img/make-up-glasses.png"
+        alt="stylist applying makeup"
+      />
+      <div class="title-card-container">
+        <h1>Salon</h1>
+        <h3>Quality Lashes from the comfort of your home</h3>
+        <button class="accent-button margin-topped">Subscribe</button>
+      </div>
+    </div>
+
+    <div class="gray-rectangle-container">
+      <img src="/img/gray-rectangle.png" alt="gray background" />
+      <div class="coming-soon-flex">
+        <div>C</div>
+        <div>O</div>
+        <div>M</div>
+        <div>I</div>
+        <div>N</div>
+        <div>G</div>
+        <div>&nbsp</div>
+        <div>S</div>
+        <div>O</div>
+        <div>O</div>
+        <div>N</div>
+      </div>
+
+      <div class="title-card-container-2">
+        <div class="card-2">
+          <h2>Lash Experts to your doors within hours</h2>
+          <p>
+            A curated collection of the best lash artists in your city. With the
+            click of a button we bring the salon experience to your door step.
+            No more difficulty getting appointments or navigating crowded lash
+            salons. lash services from the comfort of your home.
+          </p>
+          <br />
+          <p>
+            Search for top-rated lash artists in your area. Read reviews. Book a
+            lash appointment and let us do the rest.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="eyebrush-flex">
+      <img src="/img/eyebrush.png" alt="applying makeup to eye" />
+    </div>
+
+    <div class="iphone-flex">
+      <img src="/img/iphone-x-mock-up.png" alt="iphone on the table" />
+      <div class="iphone-card-flex">
+        <div class="card-text">
+          <div class="decorative-1">01</div>
+          <h2>Make your own schedule</h2>
+          <p>Work then you want, without having to go into a salon everyday.</p>
+        </div>
       </div>
     </div>
   </body>

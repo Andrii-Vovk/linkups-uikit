@@ -1,87 +1,56 @@
-@import 'variables', 'resets', 'font-imports';
+@import "variables", "resets", "font-imports";
 
-
-.flex-container {
-  display: flex;
-  justify-content: space-around;
+html {
+  font-size: 22px; //1rem
 }
 
-/* typography - headers */
-@mixin headings {
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    @content;
-  }
-}
-
-@include headings {
-  font-family: "Inter";
-  color: #00194c;
+p {
+  font-family: SukhumvitSet;
+  font-weight: 300;
+  font-size: 1rem; //22px
+  line-height: 1.72rem; //37.84px
 }
 
 h1 {
-  font-size: 32px;
-  line-height: 42px;
+  font-family: Saudagar;
+  font-size: 12.5rem; //275px
+  line-height: 16.25rem; //357.5px
+  text-transform: uppercase;
 }
 
 h2 {
-  font-size: 28px;
-  line-height: 36px;
+  font-family: Saudagar;
+  font-size: 2.2727rem; //50px
+  line-height: 2.9545rem; //65px
+  text-transform: uppercase;
+}
+
+.decorative-1 {
+  font-family: Saudagar;
+  font-size: 1.3636rem; //30px
+  line-height: 2.0455rem; //65px
+  text-transform: uppercase;
+  color: $accent-color-hex;
 }
 
 h3 {
-  font-size: 22px;
-  line-height: 30px;
+  font-family: SukhumvitSet;
+  font-weight: 300;
+  font-size: 1.4545rem; //32px
+  line-height: 1.8909rem; //41.6px
+  text-transform: uppercase;
 }
 
-h4 {
-  font-size: 20px;
-  line-height: 28px;
+.lashes {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 1.4091rem; //31px
+  line-height: 2.325rem; //51.15px
 }
 
-h5 {
-  font-size: 18px;
-  line-height: 26px;
-}
-
-h6 {
-  font-size: 16px;
-  line-height: 24px;
-}
-
-/* typography - paragraphs */
-p {
-  font-family: "Inter";
-  color: #00194c;
-  font-size: 18px;
-  line-height: 26px;
-}
-
-.p1 {
-  font-size: 20px;
-  line-height: 28px;
-}
-
-.p2 {
-  font-size: 18px;
-  line-height: 26px;
-}
-
-.p3 {
-  font-size: 16px;
-  line-height: 24px;
-}
-
-.p4 {
-  font-size: 14px;
-  line-height: 22px;
-}
-
-.table-container {
-  display: flex;
-  justify-content: center;
+.navbar-links {
+  font-family: SukhumvitSet;
+  font-weight: 500;
+  font-size: 0.8182rem; //18px
+  line-height: 1.0909rem; //24px
 }
