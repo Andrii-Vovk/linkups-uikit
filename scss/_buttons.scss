@@ -13,10 +13,6 @@
   transition: all 0.3s ease-in-out;
 }
 
-.center-button {
-  margin-left: auto;
-  margin-right: auto;
-}
 
 .accent-button {
   @include button-base;
@@ -30,6 +26,7 @@
   font-size: 0.8182rem;
   line-height: 1.4091rem;
 
+  cursor: pointer;
   &:hover {
     background-color: lighten($accent-color-hex, 10%);
     transform: scale(1.05);
@@ -45,12 +42,14 @@
   font-family: SukhumvitSet;
   font-weight: 500;
   font-size: 0.8182rem;
-  line-height: 1.0909rem;
+  line-height: 100%;
   color: white;
+
+  cursor: pointer;
 
   & svg {
     display: inline-block;
-    vertical-align: text-bottom;
+    vertical-align: middle;
     margin-right: 10px;
   }
 

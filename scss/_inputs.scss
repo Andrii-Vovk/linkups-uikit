@@ -1,0 +1,22 @@
+.text-input {
+  outline: none;
+  border: none;
+  text-decoration: none;
+  background: transparent;
+  width: 100%;
+  border-bottom: 2px solid white;
+
+  padding: 6px 0px;
+  font-family: SukhumvitSet;
+  font-size: 0.7273rem;
+  font-weight: 300;
+  color: white;
+  opacity: 70%;
+
+  text-transform: uppercase;
+}
+
+.text-input::placeholder {
+    color: white;
+    opacity: 70%;
+  }

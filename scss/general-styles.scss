@@ -1,3 +1,5 @@
+@import "variables", "resets", "font-imports", "typography", "buttons", "inputs";
+
 @mixin fit-screen-img-horizontal {
   width: 100%;
   min-height: auto;
@@ -40,74 +42,78 @@ ul {
   }
 }
 
-.darkened-img {
-  @include fit-screen-img-horizontal;
-  filter: brightness(50%);
-}
+.img-container {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(/img/make-up-glasses.png);
+  background-position: center;
+  background-size: cover;
+  position: relative;
 
-@mixin centering-in-div() {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-}
-
-.title-card-container {
-  @include centering-in-div;
-  transform: translate(-50%, -10%);
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  color: white;
-
-  & h3 {
-    position: relative;
-    top: -45px;
+  & button {
+    margin-top: 10vh;
   }
-
-  & .card-2 {
-    text-align: center;
-    & h2 {
-      position: relative;
-      top: -45px;
-    }
-
-    & p {
-      opacity: 80%;
-    }
-  }
-}
-
-
-.title-card-container-2 {
-    @include centering-in-div;
-
-    transform: translate(-50%, -50%);
-  
+  & .title-card-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-  
+    justify-content: center;
+
     color: white;
-  
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -35%);
+
     & .card-2 {
       text-align: center;
       & h2 {
         position: relative;
         top: -45px;
       }
-  
+
+      & p {
+        opacity: 80%;
+        text-align: justify;
+      }
+    }
+  }
+}
+
+.gray-rectangle-container {
+  min-height: 100vh;
+  width: 100%;
+  background-image: url(/img/gray-rectangle.png);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+
+  & .title-card-container-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    color: white;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    & .card-2 {
+      text-align: center;
+      & h2 {
+        position: relative;
+        top: -45px;
+      }
+
       & p {
         opacity: 80%;
       }
     }
   }
-
-
-.gray-rectangle-container {
-  position: relative;
-  bottom: 7px;
 
   & .coming-soon-flex {
     display: flex;
@@ -118,35 +124,188 @@ ul {
 
     font-family: Saudagar;
     font-size: 9rem; //198px
-    line-height: 16.25rem; //357.5px
+    line-height: 100%; //357.5px
     text-transform: uppercase;
 
     position: absolute;
-    top: -85px;
-  }
-
-  & img {
-    @include fit-screen-img-horizontal;
+    top: 0px;
   }
 }
 
 .eyebrush-flex {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    bottom: 25vh;
+  display: flex;
+  justify-content: center;
 
-    & img {
-        width: 80vw;
-    }
+  & img {
+    position: relative;
+    bottom: 100px;
+    width: 80vw;
+  }
 }
 
-.iphone-flex {
+.flex-01 {
+  display: flex;
+  justify-content: space-between;
+  margin: 0% 10vw;
+
+  & img {
+    width: 30vw;
+    height: auto;
+  }
+
+  & .flex-01-item-l {
+    margin-right: 10vw;
+  }
+  & .flex-01-item-r {
+    margin-left: 10vw;
+  }
+}
+
+.card-text {
+  & p {
+    margin-top: 35px;
+  }
+}
+
+.gray-rectangle-container-02 {
+  margin-top: 250px;
+  height: 95vh;
+  width: auto;
+  background-color: $dark-gray-color_hex;
+  position: relative;
+
+  & .flex-02 {
     display: flex;
     justify-content: space-between;
-    padding: 0px 7%;
+    margin: 0% 10vw;
+    align-items: center;
 
-   & .card-text {
-       width: 80%;
-   }
+    position: absolute;
+    bottom: 0px;
+
+    & .flex-02-item-l {
+      margin-right: 10vw;
+    }
+    & .flex-02-item-r {
+      margin-left: 10vw;
+
+      & img {
+        display: block;
+        height: 100vh;
+        width: auto;
+      }
+    }
+
+    & h2,
+    p {
+      color: white;
+    }
+  }
+}
+
+.flex-03-04 {
+  display: flex;
+  justify-content: space-between;
+  margin: 25vh 10vw;
+
+  & .flex-03-04-item-l,
+  .flex-03-04-item-r {
+    width: 30vw;
+  }
+}
+
+.ellipse-flex {
+  height: 100vh;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  position: relative;
+
+  & img {
+    width: 25vw;
+    height: auto;
+    margin: 0px 30px;
+  }
+
+  & .phone-img-flex {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & .phone-button-flex {
+      display: flex;
+      align-items: center;
+      margin-top: 5%;
+
+      & button {
+        margin: 0px 3px;
+      }
+    }
+  }
+}
+
+.form-flex {
+  margin-top: 5vh;
+  display: flex;
+
+  & img {
+    display: block;
+    width: 100%;
+    height: auto;
+    min-width: 600px;
+  }
+
+  & .survey {
+    width: 50vw;
+    height: 100%;
+    background-color: $dark-gray-color_hex;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0px 8vw;
+
+    & h2 {
+      align-self: flex-start;
+      color: white;
+    }
+
+    & input,
+    button {
+      margin: 25px 0px;
+      width: 100%;
+    }
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: black;
+  color: white;
+
+  padding: 20px 0px;
+
+  & * {
+    padding: 0px 100px;
+  }
+
+  & p {
+    font-size: 0.7273rem;
+  }
+}
+
+@media (max-width: 1400px) {
+  html {
+    font-size: 16px;
+  }
 }
