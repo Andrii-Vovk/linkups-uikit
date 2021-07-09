@@ -693,6 +693,11 @@ footer p {
 .gray-rectangle-container-02 .flex-02 .flex-02-item-r {
     margin: 5% 5%;
   }
+  .gray-rectangle-container-02 .flex-02 .flex-02-item-l img,
+.gray-rectangle-container-02 .flex-02 .flex-02-item-r img {
+    width: 100%;
+    height: auto;
+  }
 
   .flex-03-04 {
     flex-direction: column;

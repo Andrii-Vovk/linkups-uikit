@@ -403,10 +403,18 @@ footer {
       position: static;
       @include column-flex;
       margin: 0px 0px;
+
       & .flex-02-item-l,
       .flex-02-item-r {
         margin: 5% 5%;
+
+        
+      & img {
+        width: 100%;
+        height: auto;
       }
+      }
+
     }
   }
 
