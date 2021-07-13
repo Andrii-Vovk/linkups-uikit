@@ -131,7 +131,7 @@ p {
   font-family: SukhumvitSet;
   font-weight: 300;
   font-size: 1rem;
-  line-height: 1.72rem;
+  line-height: 1.7204545455rem;
 }
 
 h1 {
@@ -143,15 +143,15 @@ h1 {
 
 h2 {
   font-family: Saudagar;
-  font-size: 2.2727rem;
-  line-height: 2.9545rem;
+  font-size: 2.2727272727rem;
+  line-height: 2.9545454545rem;
   text-transform: uppercase;
 }
 
 .decorative-1 {
   font-family: Saudagar;
-  font-size: 1.3636rem;
-  line-height: 2.0455rem;
+  font-size: 1.3636363636rem;
+  line-height: 2.9545454545rem;
   text-transform: uppercase;
   color: #DCAC9B;
 }
@@ -159,23 +159,23 @@ h2 {
 h3 {
   font-family: SukhumvitSet;
   font-weight: 300;
-  font-size: 1.4545rem;
-  line-height: 1.8909rem;
+  font-size: 1.4545454545rem;
+  line-height: 1.8636363636rem;
   text-transform: uppercase;
 }
 
 .lashes {
   font-family: Montserrat;
   font-weight: 400;
-  font-size: 1.4091rem;
+  font-size: 1.4090909091rem;
   line-height: 2.325rem;
 }
 
 .navbar-links {
   font-family: SukhumvitSet;
-  font-weight: 500;
-  font-size: 0.8182rem;
-  line-height: 1.0909rem;
+  font-weight: 300;
+  font-size: 0.8181818182rem;
+  line-height: 1.0909090909rem;
 }
 
 /* $primary-color-rgb: rgb(0, 82, 255);
@@ -355,6 +355,11 @@ html {
   opacity: 70%;
 }
 
+.lashes {
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+}
+
 .top-nav {
   position: absolute;
   width: 100%;
@@ -407,10 +412,21 @@ ul li {
   left: 50%;
   transform: translate(-50%, -35%);
 }
+.img-container .title-card-container h1 {
+  opacity: 0;
+  transform: rotate(0.005turn);
+  animation: fadeDown 3s ease-in-out forwards;
+}
 .img-container .title-card-container h3 {
   margin-bottom: 10vh;
 }
 
+@keyframes fadeDown {
+  to {
+    opacity: 1;
+    transform: rotate(0);
+  }
+}
 .gray-rectangle-container {
   min-height: 100vh;
   width: 100%;
@@ -444,15 +460,24 @@ ul li {
   width: 100%;
   justify-content: space-between;
   color: white;
-  opacity: 0.06;
   font-family: Saudagar;
   font-size: 9rem;
   line-height: 100%;
   text-transform: uppercase;
+  overflow: hidden;
   position: absolute;
   top: 0px;
+  animation: pulse 5s ease-in alternate infinite;
 }
 
+@keyframes pulse {
+  from {
+    opacity: 0.06;
+  }
+  to {
+    opacity: 0.5;
+  }
+}
 .eyebrush-flex {
   display: flex;
   justify-content: center;
@@ -476,7 +501,11 @@ ul li {
   margin-right: 10vw;
 }
 .flex-01 .flex-01-item-r {
+  transition: 0.5s ease-in-out;
   margin-left: 10vw;
+}
+.flex-01 .flex-01-item-r:hover {
+  transform: translateX(1rem);
 }
 
 .card-text p {
@@ -500,6 +529,10 @@ ul li {
 }
 .gray-rectangle-container-02 .flex-02 .flex-02-item-l {
   margin-right: 10vw;
+  transition: 0.5s ease-in-out;
+}
+.gray-rectangle-container-02 .flex-02 .flex-02-item-l:hover {
+  transform: translateX(1rem);
 }
 .gray-rectangle-container-02 .flex-02 .flex-02-item-r {
   margin-left: 10vw;
@@ -521,7 +554,13 @@ ul li {
 }
 .flex-03-04 .flex-03-04-item-l,
 .flex-03-04 .flex-03-04-item-r {
+  transition: 0.5s ease-in-out;
   width: 30vw;
+  transition: 0.5s ease-in-out;
+}
+.flex-03-04 .flex-03-04-item-l:hover,
+.flex-03-04 .flex-03-04-item-r:hover {
+  transform: translateX(1rem);
 }
 
 .ellipse-flex {
@@ -536,6 +575,15 @@ ul li {
   width: 25vw;
   height: auto;
   margin: 0px 30px;
+}
+.ellipse-flex .ellipse-1 {
+  animation: scaleUp 4s ease-in-out infinite;
+}
+.ellipse-flex .ellipse-2 {
+  animation: scaleUp 4s ease-in-out 2s infinite;
+}
+.ellipse-flex .ellipse-3 {
+  animation: scaleUp 4s ease-in-out 3s infinite, turn45 4s ease-in-out 3s infinite;
 }
 .ellipse-flex .phone-img-flex {
   position: absolute;
@@ -555,6 +603,19 @@ ul li {
   margin: 0px 3px;
 }
 
+@keyframes scaleUp {
+  16% {
+    transform: scale(1.1);
+  }
+  33%, 100% {
+    transform: scale(1);
+  }
+}
+@keyframes turn45 {
+  to {
+    transform: rotate(0.25turn);
+  }
+}
 .form-flex {
   margin-top: 5vh;
   display: flex;
@@ -580,9 +641,24 @@ ul li {
   color: white;
 }
 .form-flex .survey input,
-.form-flex .survey button, .form-flex .survey h2 {
-  margin: 25px 0px;
+.form-flex .survey button,
+.form-flex .survey label,
+.form-flex .survey h2 {
+  margin: 10px 0px;
   width: 100%;
+}
+.form-flex .survey input:focus::placeholder,
+.form-flex .survey button:focus::placeholder,
+.form-flex .survey label:focus::placeholder,
+.form-flex .survey h2:focus::placeholder {
+  color: transparent;
+}
+.form-flex .survey label {
+  color: transparent;
+  transition: 0.25s ease-in-out;
+}
+.form-flex .survey label:focus-within {
+  color: white;
 }
 
 footer {

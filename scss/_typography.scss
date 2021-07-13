@@ -1,30 +1,36 @@
+@use "sass:math";
 @import "variables", "resets", "font-imports";
+// Function for converting a px based font-size to rem.
+@function calculateRem($size) {
+  @return math.div($size, 22px) * 1rem;
+ }
+ 
 
 p {
   font-family: SukhumvitSet;
   font-weight: 300;
-  font-size: 1rem; //22px
-  line-height: 1.72rem; //37.84px
+  font-size: calculateRem(22px);
+  line-height: calculateRem(37.85px);
 }
 
 h1 {
   font-family: Saudagar;
-  font-size: 12.5rem; //275px
-  line-height: 16.25rem; //357.5px
+  font-size: calculateRem(275px);
+  line-height: calculateRem(357.5px);
   text-transform: uppercase;
 }
 
 h2 {
   font-family: Saudagar;
-  font-size: 2.2727rem; //50px
-  line-height: 2.9545rem; //65px
+  font-size: calculateRem(50px); //50px
+  line-height: calculateRem(65px);
   text-transform: uppercase;
 }
 
 .decorative-1 {
   font-family: Saudagar;
-  font-size: 1.3636rem; //30px
-  line-height: 2.0455rem; //65px
+  font-size:calculateRem(30px);
+  line-height: calculateRem(65px); //65px
   text-transform: uppercase;
   color: $accent-color-hex;
 }
@@ -32,21 +38,21 @@ h2 {
 h3 {
   font-family: SukhumvitSet;
   font-weight: 300;
-  font-size: 1.4545rem; //32px
-  line-height: 1.8909rem; //41.6px
+  font-size: calculateRem(32px); //32px
+  line-height: calculateRem(41px); //41.6px
   text-transform: uppercase;
 }
 
 .lashes {
   font-family: Montserrat;
   font-weight: 400;
-  font-size: 1.4091rem; //31px
-  line-height: 2.325rem; //51.15px
+  font-size: calculateRem(31px); //31px
+  line-height: calculateRem(51.15px); //51.15px
 }
 
 .navbar-links {
   font-family: SukhumvitSet;
-  font-weight: 500;
-  font-size: 0.8182rem; //18px
-  line-height: 1.0909rem; //24px
+  font-weight: 300;
+  font-size: calculateRem(18px); //18px
+  line-height: calculateRem(24px); //24px
 }

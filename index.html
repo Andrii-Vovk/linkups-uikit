@@ -61,15 +61,15 @@
     <div class="gray-rectangle-container">
       <div class="coming-soon-flex">
         <div>C</div>
-        <div>O</div>
+        <div class="pulse">O</div>
         <div>M</div>
         <div>I</div>
         <div>N</div>
         <div>G</div>
         <div>&nbsp</div>
         <div>S</div>
-        <div>O</div>
-        <div>O</div>
+        <div class="pulse">O</div>
+        <div class="pulse">O</div>
         <div>N</div>
       </div>
 
@@ -155,9 +155,9 @@
     </div>
 
     <div class="ellipse-flex">
-      <img src="./svgs/Ellipse.svg" alt="Pink pastel ellipse" />
-      <img src="./svgs/Ellipse.svg" alt="Pink pastel ellipse" />
-      <img src="./svgs/strange-elipse.svg" alt="Pink pastel ellipse" />
+      <img class="ellipse-1" src="./svgs/Ellipse.svg" alt="Pink pastel ellipse" />
+      <img class="ellipse-2" src="./svgs/Ellipse.svg" alt="Pink pastel ellipse" />
+      <img class="ellipse-3" src="./svgs/strange-elipse.svg" alt="Pink pastel ellipse" />
       <div class="phone-img-flex">
         <img src="./img/vixen-phone-girl.png" alt="phone app demo" />
         <p>COMING SOON ON</p>
@@ -211,12 +211,24 @@
       <div>
         <form class="survey" action="#">
           <h2>Subscribe</h2>
-          <input type="text" class="text-input" placeholder="FIRST NAME"/>
-          <input type="text" class="text-input" placeholder="LAST NAME"/>
-          <input type="text" class="text-input" placeholder="CITY"/>
-          <input type="text" class="text-input" placeholder="STATE"/>
-          <input type="text" class="text-input" placeholder="PHONE NUMBER"/>
-          <input type="text" class="text-input" placeholder="EMAIL"/>
+          <label class="navbar-links" for="name">Name
+            <input type="text" class="text-input" name="name" placeholder="FIRST NAME"/>
+          </label>
+          <label class="navbar-links" for="last-name">Last Name
+          <input type="text" class="text-input" name="last-name" placeholder="LAST NAME"/>
+          </label>
+          <label class="navbar-links" for="city">City
+          <input type="text" class="text-input" name="city" placeholder="CITY"/>
+          </label>
+          <label class="navbar-links" for="state">State
+          <input type="text" class="text-input" name="state" placeholder="STATE"/>
+          </label>
+          <label class="navbar-links" for="phone-number">Phone Number
+          <input type="text" class="text-input" name="phone-number" placeholder="PHONE NUMBER"/>
+          </label>
+          <label class="navbar-links" for="email">Email
+          <input type="text" class="text-input" name="email" placeholder="EMAIL"/>
+          </label>
           <button class="accent-button">Subscribe</button>
         </form>
       </div>
