@@ -78,6 +78,17 @@
   }
 }
 
+.arrow-left {
+  &::before {
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900;
+    content: "\f060";
+    padding-right: 0.250em;
+  }
+}
+
+
+
 /* Demo classes */
 
 @mixin demo-static-button-base {

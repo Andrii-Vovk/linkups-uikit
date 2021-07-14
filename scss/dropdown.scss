@@ -29,15 +29,19 @@
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 20px;
+  position: relative;
   min-width: 200px;
   text-align: left;
   text-decoration: none;
   display: inline-block;
 
-  & svg {
-    position: absolute;
-    right: 7%;
-    top: 7%;
+  &::after {
+      font-family: "Font Awesome 5 Free"; 
+      font-weight: 900;
+      content: "\f078";
+      position: absolute;
+      right: 0;
+      padding-right: 0.75em;
   }
 
   & + .dropdown-content {
