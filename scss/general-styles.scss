@@ -19,6 +19,34 @@
   padding: 0px 50px;
 }
 
+.app-store-left {
+  position: relative;
+  &::before {
+      font-family: "Font Awesome 5 Brands"; 
+      font-size: 1.5em;
+      font-weight: 900;
+      content: "\f179";
+     // padding-right: 0.250em;
+      position: absolute;
+      left: 0.250em;
+      bottom: 0.1em;
+  }
+}
+
+.play-store-left {
+  position: relative;
+  &::before {
+      font-family: "Font Awesome 5 Brands"; 
+      font-size: 1.2em;
+      font-weight: 900;
+      content: "\f3ab";
+     // padding-right: 0.250em;
+      position: absolute;
+      left: 0.250em;
+      bottom: 0.05em;
+  }
+}
+
 ul {
   list-style-type: none;
   overflow: hidden;

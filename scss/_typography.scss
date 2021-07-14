@@ -14,7 +14,9 @@ p {
 }
 
 h1 {
-  font-family: 'Saudagar', sans-serif;
+  font-family: 'SukhumvitSet';
+  font-weight: 300;
+  letter-spacing: -5px;
   font-size: calculateRem(275px);
   line-height: calculateRem(357.5px);
   text-transform: uppercase;
