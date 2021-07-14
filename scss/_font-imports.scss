@@ -1,41 +1,57 @@
 /* Montserrat for "LASHES" word in navbar and footer */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
-/* Saudagar for Headers */
+/*
 @font-face {
 	font-family: 'Saudagar';
 	src: url('../fonts/saudagar/Saudagar.eot');
 	src: url('../fonts/saudagar/Saudagar.woff') format('woff'), url('../fonts/saudagar/Saudagar.ttf') format('truetype'), url('../fonts/saudagar/Saudagar.svg') format('svg');
-	font-weight: normal;
+	font-weight: 400;
 	font-style: normal;
-}
+} */
+
+@import url("http://fonts.cdnfonts.com/css/saudagar");
 
 /* Sukhumvit light for p`s */
 @font-face {
-	font-family: 'SukhumvitSet';
-	src: url('../fonts/sukhumvit/sukhumvit-300/SukhumvitSet-Light.eot');
-	src: url('../fonts/sukhumvit/sukhumvit-300/SukhumvitSet-Light.woff') format('woff'), url('../fonts/sukhumvit/sukhumvit-300/SukhumvitSet-Light.ttf') format('truetype'), url('../fonts/sukhumvit/sukhumvit-300/SukhumvitSet-Light.svg') format('svg');
-	font-weight: 300;
-	font-style: normal;
+  font-family: "SukhumvitSet";
+  src: url("../fonts/sukhumvit/sukhumvit-300/SukhumvitSet-Light.eot");
+  src: url("../fonts/sukhumvit/sukhumvit-300/SukhumvitSet-Light.woff")
+      format("woff"),
+    url("../fonts/sukhumvit/sukhumvit-300/SukhumvitSet-Light.ttf")
+      format("truetype"),
+    url("../fonts/sukhumvit/sukhumvit-300/SukhumvitSet-Light.svg") format("svg");
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
 }
 
 /* Sukhumvit semi-bold for navbar and footer */
 @font-face {
-	font-family: 'SukhumvitSet';
-	src: url('../fonts/sukhumvit/sukhumvit-500/SukhumvitSet-SemiBold.eot');
-	src: url('../fonts/sukhumvit/sukhumvit-500/SukhumvitSet-SemiBold.woff') format('woff'), url('../fonts/sukhumvit/sukhumvit-500/SukhumvitSet-SemiBold.ttf') format('truetype'), url('../fonts/sukhumvit/sukhumvit-500/SukhumvitSet-SemiBold.svg') format('svg');
-	font-weight: 500;
-	font-style: normal;
+  font-family: "SukhumvitSet";
+  src: url("../fonts/sukhumvit/sukhumvit-500/SukhumvitSet-SemiBold.eot");
+  src: url("../fonts/sukhumvit/sukhumvit-500/SukhumvitSet-SemiBold.woff")
+      format("woff"),
+    url("../fonts/sukhumvit/sukhumvit-500/SukhumvitSet-SemiBold.ttf")
+      format("truetype"),
+    url("../fonts/sukhumvit/sukhumvit-500/SukhumvitSet-SemiBold.svg")
+      format("svg");
+  font-weight: 500;
+  font-style: normal;
 }
 
 @font-face {
-	font-family: 'SukhumvitSet';
-	src: url('../fonts/sukhumvit/sukhumvit-700/SukhumvitSet-Bold.eot');
-	src: url('../fonts/sukhumvit/sukhumvit-700/SukhumvitSet-Bold.woff') format('woff'), url('../fonts/sukhumvit/sukhumvit-700/SukhumvitSet-Bold.ttf') format('truetype'), url('../fonts/sukhumvit/sukhumvit-700/SukhumvitSet-Bold.svg') format('svg');
-	font-weight: 700;
-	font-style: normal;
+  font-family: "SukhumvitSet";
+  src: url("../fonts/sukhumvit/sukhumvit-700/SukhumvitSet-Bold.eot");
+  src: url("../fonts/sukhumvit/sukhumvit-700/SukhumvitSet-Bold.woff")
+      format("woff"),
+    url("../fonts/sukhumvit/sukhumvit-700/SukhumvitSet-Bold.ttf")
+      format("truetype"),
+    url("../fonts/sukhumvit/sukhumvit-700/SukhumvitSet-Bold.svg") format("svg");
+  font-weight: 700;
+  font-style: normal;
 }
-
-
-
-

@@ -14,10 +14,12 @@ p {
 }
 
 h1 {
-  font-family: Saudagar;
+  font-family: 'Saudagar', sans-serif;
   font-size: calculateRem(275px);
   line-height: calculateRem(357.5px);
   text-transform: uppercase;
+  outline: 0;
+  border: 0;
 }
 
 h2 {

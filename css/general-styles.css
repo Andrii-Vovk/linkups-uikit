@@ -18,13 +18,18 @@ $success-color-rgb: rgb(83, 216, 106);
 
 $error-color-rgb: rgb(255, 52, 52); */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("http://fonts.cdnfonts.com/css/saudagar");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("http://fonts.cdnfonts.com/css/saudagar");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("http://fonts.cdnfonts.com/css/saudagar");
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   border-collapse: collapse;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: subpixel-antialiased;
 }
 
 html {
@@ -33,21 +38,26 @@ html {
 }
 
 /* Montserrat for "LASHES" word in navbar and footer */
-/* Saudagar for Headers */
+/*
 @font-face {
-  font-family: "Saudagar";
-  src: url("../fonts/saudagar/Saudagar.eot");
-  src: url("../fonts/saudagar/Saudagar.woff") format("woff"), url("../fonts/saudagar/Saudagar.ttf") format("truetype"), url("../fonts/saudagar/Saudagar.svg") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
+	font-family: 'Saudagar';
+	src: url('../fonts/saudagar/Saudagar.eot');
+	src: url('../fonts/saudagar/Saudagar.woff') format('woff'), url('../fonts/saudagar/Saudagar.ttf') format('truetype'), url('../fonts/saudagar/Saudagar.svg') format('svg');
+	font-weight: 400;
+	font-style: normal;
+} */
 /* Sukhumvit light for p`s */
 @font-face {
   font-family: "SukhumvitSet";
   src: url("../fonts/sukhumvit/sukhumvit-300/SukhumvitSet-Light.eot");
   src: url("../fonts/sukhumvit/sukhumvit-300/SukhumvitSet-Light.woff") format("woff"), url("../fonts/sukhumvit/sukhumvit-300/SukhumvitSet-Light.ttf") format("truetype"), url("../fonts/sukhumvit/sukhumvit-300/SukhumvitSet-Light.svg") format("svg");
-  font-weight: 300;
+  speak: none;
   font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
 }
 /* Sukhumvit semi-bold for navbar and footer */
 @font-face {
@@ -88,6 +98,8 @@ $error-color-rgb: rgb(255, 52, 52); */
   margin: 0;
   padding: 0;
   border-collapse: collapse;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: subpixel-antialiased;
 }
 
 html {
@@ -96,21 +108,26 @@ html {
 }
 
 /* Montserrat for "LASHES" word in navbar and footer */
-/* Saudagar for Headers */
+/*
 @font-face {
-  font-family: "Saudagar";
-  src: url("../fonts/saudagar/Saudagar.eot");
-  src: url("../fonts/saudagar/Saudagar.woff") format("woff"), url("../fonts/saudagar/Saudagar.ttf") format("truetype"), url("../fonts/saudagar/Saudagar.svg") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
+	font-family: 'Saudagar';
+	src: url('../fonts/saudagar/Saudagar.eot');
+	src: url('../fonts/saudagar/Saudagar.woff') format('woff'), url('../fonts/saudagar/Saudagar.ttf') format('truetype'), url('../fonts/saudagar/Saudagar.svg') format('svg');
+	font-weight: 400;
+	font-style: normal;
+} */
 /* Sukhumvit light for p`s */
 @font-face {
   font-family: "SukhumvitSet";
   src: url("../fonts/sukhumvit/sukhumvit-300/SukhumvitSet-Light.eot");
   src: url("../fonts/sukhumvit/sukhumvit-300/SukhumvitSet-Light.woff") format("woff"), url("../fonts/sukhumvit/sukhumvit-300/SukhumvitSet-Light.ttf") format("truetype"), url("../fonts/sukhumvit/sukhumvit-300/SukhumvitSet-Light.svg") format("svg");
-  font-weight: 300;
+  speak: none;
   font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
 }
 /* Sukhumvit semi-bold for navbar and footer */
 @font-face {
@@ -135,10 +152,12 @@ p {
 }
 
 h1 {
-  font-family: Saudagar;
+  font-family: "Saudagar", sans-serif;
   font-size: 12.5rem;
   line-height: 16.25rem;
   text-transform: uppercase;
+  outline: 0;
+  border: 0;
 }
 
 h2 {
@@ -202,6 +221,8 @@ $error-color-rgb: rgb(255, 52, 52); */
   margin: 0;
   padding: 0;
   border-collapse: collapse;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: subpixel-antialiased;
 }
 
 html {
@@ -210,21 +231,26 @@ html {
 }
 
 /* Montserrat for "LASHES" word in navbar and footer */
-/* Saudagar for Headers */
+/*
 @font-face {
-  font-family: "Saudagar";
-  src: url("../fonts/saudagar/Saudagar.eot");
-  src: url("../fonts/saudagar/Saudagar.woff") format("woff"), url("../fonts/saudagar/Saudagar.ttf") format("truetype"), url("../fonts/saudagar/Saudagar.svg") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
+	font-family: 'Saudagar';
+	src: url('../fonts/saudagar/Saudagar.eot');
+	src: url('../fonts/saudagar/Saudagar.woff') format('woff'), url('../fonts/saudagar/Saudagar.ttf') format('truetype'), url('../fonts/saudagar/Saudagar.svg') format('svg');
+	font-weight: 400;
+	font-style: normal;
+} */
 /* Sukhumvit light for p`s */
 @font-face {
   font-family: "SukhumvitSet";
   src: url("../fonts/sukhumvit/sukhumvit-300/SukhumvitSet-Light.eot");
   src: url("../fonts/sukhumvit/sukhumvit-300/SukhumvitSet-Light.woff") format("woff"), url("../fonts/sukhumvit/sukhumvit-300/SukhumvitSet-Light.ttf") format("truetype"), url("../fonts/sukhumvit/sukhumvit-300/SukhumvitSet-Light.svg") format("svg");
-  font-weight: 300;
+  speak: none;
   font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
 }
 /* Sukhumvit semi-bold for navbar and footer */
 @font-face {
