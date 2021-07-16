@@ -17,14 +17,14 @@
 .accent-button {
   @include button-base;
   @include ease-button-transition;
-  width: 12.8182rem;
-  height: 2.6818rem;
+  width: calculateRem(282px);
+  height: calculateRem(58px);
   background-color: $accent-color-hex;
   font-family: SukhumvitSet;
   font-weight: 700;
   color: black;
-  font-size: 0.8182rem;
-  line-height: 1.4091rem;
+  font-size: calculateRem(18px);
+  line-height: calculateRem(31px);
 
   cursor: pointer;
   &:hover {
@@ -36,12 +36,12 @@
 .black-button {
   @include button-base;
   @include ease-button-transition;
-  width: 8.2727rem;
-  height: 2.3636rem;
+  width: calculateRem(182px);
+  height: calculateRem(52px);
   background-color: black;
   font-family: SukhumvitSet;
   font-weight: 500;
-  font-size: 0.8182rem;
+  font-size: calculateRem(18px);
   line-height: 100%;
   color: white;
 

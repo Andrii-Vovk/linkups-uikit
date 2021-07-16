@@ -272,14 +272,14 @@ html {
   display: inline-block;
   padding-top: 3px;
   transition: all 0.3s ease-in-out;
-  width: 12.8182rem;
-  height: 2.6818rem;
+  width: 12.8181818182rem;
+  height: 2.6363636364rem;
   background-color: #DCAC9B;
   font-family: SukhumvitSet;
   font-weight: 700;
   color: black;
-  font-size: 0.8182rem;
-  line-height: 1.4091rem;
+  font-size: 0.8181818182rem;
+  line-height: 1.4090909091rem;
   cursor: pointer;
 }
 .accent-button:hover {
@@ -295,12 +295,12 @@ html {
   display: inline-block;
   padding-top: 3px;
   transition: all 0.3s ease-in-out;
-  width: 8.2727rem;
-  height: 2.3636rem;
+  width: 8.2727272727rem;
+  height: 2.3636363636rem;
   background-color: black;
   font-family: SukhumvitSet;
   font-weight: 500;
-  font-size: 0.8182rem;
+  font-size: 0.8181818182rem;
   line-height: 100%;
   color: white;
   cursor: pointer;
@@ -366,7 +366,7 @@ html {
   border-bottom: 2px solid white;
   padding: 6px 0px;
   font-family: SukhumvitSet;
-  font-size: 0.7273rem;
+  font-size: 0.7272727273rem;
   font-weight: 300;
   color: white;
   opacity: 70%;
@@ -449,6 +449,9 @@ ul li {
   background-size: cover;
   position: relative;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .img-container .title-card-container {
   display: flex;
@@ -456,10 +459,6 @@ ul li {
   align-items: center;
   justify-content: center;
   color: white;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -35%);
 }
 .img-container .title-card-container h1 {
   opacity: 0;
@@ -483,16 +482,16 @@ ul li {
   background-position: center;
   background-size: cover;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .gray-rectangle-container .title-card-container-2 {
   display: flex;
   flex-direction: column;
   align-items: center;
   color: white;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  width: 80vw;
 }
 .gray-rectangle-container .title-card-container-2 .card-2 {
   text-align: center;
@@ -722,7 +721,7 @@ footer * {
   padding: 0px 100px;
 }
 footer p {
-  font-size: 0.7273rem;
+  font-size: 0.7272727273rem;
 }
 
 @media (max-width: 1400px) {
@@ -748,6 +747,9 @@ footer p {
 }
 @media (max-width: 1200px) {
   .gray-rectangle-container .coming-soon-flex {
+    position: absolute;
+    left: 0;
+    top: 0;
     flex-direction: column;
     font-size: 5rem;
     width: auto;
