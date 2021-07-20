@@ -390,6 +390,12 @@ html {
   z-index: 2;
   color: white;
   padding: 0px 50px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+.top-nav div {
+  display: flex;
 }
 
 .app-store-left {
@@ -421,24 +427,20 @@ html {
 ul {
   list-style-type: none;
   overflow: hidden;
-  display: flex;
-  justify-content: flex-end;
-  align-items: baseline;
   padding: 35px 0px;
 }
 ul svg {
   display: inline-block;
   vertical-align: -2px;
 }
-ul .play-button-svg {
-  display: inline-block;
-  vertical-align: -5px;
-}
 ul .send-to-left {
   margin-right: auto;
 }
 ul li {
   padding: 0px 30px;
+}
+ul .li-right {
+  display: inline;
 }
 
 .img-container {
@@ -491,7 +493,7 @@ ul li {
   flex-direction: column;
   align-items: center;
   color: white;
-  width: 80vw;
+  width: 70vw;
 }
 .gray-rectangle-container .title-card-container-2 .card-2 {
   text-align: center;
@@ -730,19 +732,23 @@ footer p {
   }
 }
 @media (max-width: 700px) {
-  html {
-    font-size: 12px;
-  }
-
-  .top-nav ul {
+  .top-nav {
     flex-direction: column;
+    justify-content: center;
     align-items: center;
   }
-  .top-nav ul li {
-    margin: 2% 0%;
+  .top-nav * {
+    padding-bottom: 0;
+    padding-top: 0;
+    margin-top: 5px;
   }
-  .top-nav ul .send-to-left {
-    margin-right: 0px;
+  .top-nav div {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .top-nav div .icon-buttons {
+    margin-top: 20px;
   }
 }
 @media (max-width: 1200px) {
@@ -751,9 +757,11 @@ footer p {
     left: 0;
     top: 0;
     flex-direction: column;
-    font-size: 5rem;
+    font-size: 3rem;
     width: auto;
     height: 100%;
+    align-items: center;
+    padding-left: 1vw;
   }
 
   .form-flex {
@@ -780,6 +788,7 @@ footer p {
   }
   .ellipse-flex img {
     width: 75vw;
+    margin: 3% 0;
   }
   .ellipse-flex .phone-img-flex .phone-button-flex {
     flex-direction: column;
@@ -846,7 +855,7 @@ footer p {
 }
 @media (max-width: 450px) {
   .title-card-container-2 {
-    width: 75vw;
+    width: 65vw;
   }
 
   .img-container .title-card-container h1 {
